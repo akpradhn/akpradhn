@@ -8,25 +8,21 @@ I transform complex data into actionable insights and build intelligent solution
 
 ## 🛠️ Tech Stack
 
-### 🧠 Core Machine Learning
-`Supervised & Unsupervised Learning` `Feature Engineering` `Model Evaluation (CV, Metrics)` `Hyperparameter Tuning` `Classical ML Algorithms` `Statistical Modeling`
+**🧠 Core ML:** `Supervised & Unsupervised Learning` `Feature Engineering` `Model Evaluation` `Hyperparameter Tuning` `Classical ML` `Statistical Modeling`
 
-### 📊 Data Science & Analytics
-`Python` `SQL` `Pandas` `NumPy` `Scikit-learn` `EDA` `Statistical Analysis` `A/B Testing` `Data Wrangling` `Jupyter`
+**📊 Data Science:** `Python` `SQL` `Pandas` `NumPy` `Scikit-learn` `EDA` `Statistical Analysis` `A/B Testing` `Data Wrangling` `Jupyter`
 
-### 📈 Visualization & BI
-`SQL` `Tableau` `Power BI` `Matplotlib` `Seaborn` `Dashboarding` `Storytelling`
+**📈 Visualization:** `Tableau` `Power BI` `Matplotlib` `Seaborn` `Dashboarding` `Storytelling`
 
-### 🛠️ Data Engineering & Big Data
-`PostgreSQL` `MongoDB` `Apache Spark` `ETL Pipelines` `Data Modeling` `Airflow`
+**🛠️ Data Engineering:** `PostgreSQL` `MongoDB` `Apache Spark` `ETL Pipelines` `Data Modeling` `Airflow`
 
 ---
 
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=akpradhn&show_icons=true&theme=radical&hide_border=true" alt="GitHub Stats" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=akpradhn&layout=compact&theme=radical&hide_border=true" alt="Top Languages" width="48%" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=akpradhn&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=akpradhn&layout=compact&theme=radical&hide_border=true" alt="Top Languages" />
 </div>
 
 ---
@@ -63,5 +59,3 @@ I transform complex data into actionable insights and build intelligent solution
 - [How to deploy a stable Shiny App with minimal effort ?](https://medium.com/@akpradhn/how-to-deploy-a-shiny-app-at-zero-cost-94e8897df34d)
 
 
-
-*"Data is the new oil, but insights are the new gold."*
