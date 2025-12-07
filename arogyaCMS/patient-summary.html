@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Summary - ACMS</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Left Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1 class="logo">
+                    <i class="fas fa-heartbeat"></i>
+                    <span>ACMS</span>
+                </h1>
+                <p class="subtitle">Arogya Clinical Management System</p>
+            </div>
+            
+            <!-- Navigation will be rendered by navigation.js -->
+            <nav class="sidebar-nav">
+                <!-- Loading... Navigation will be rendered dynamically -->
+            </nav>
+            
+            <div class="sidebar-footer">
+                <div class="user-info">
+                    <i class="fas fa-user-circle"></i>
+                    <span>All Roles</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <div class="page-header">
+                <div>
+                    <h2>Patient Summary Card</h2>
+                    <p class="page-subtitle">2nd Visit Preparation - Review and Finalize Treatment Plan</p>
+                </div>
+                <div class="header-actions">
+                    <div class="patient-selector">
+                        <label for="summary-patient-select">Select Patient:</label>
+                        <select id="summary-patient-select" class="form-input">
+                            <option value="">Choose patient...</option>
+                            <option value="ACMS-2025-001" selected>ACMS-2025-001 - Rajesh Kumar</option>
+                            <option value="ACMS-2025-002">ACMS-2025-002 - Priya Sharma</option>
+                            <option value="ACMS-2025-003">ACMS-2025-003 - Amit Patel</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Patient Timeline -->
+            <div class="card" style="margin-bottom: 24px;">
+                <div class="card-header">
+                    <h3><i class="fas fa-route"></i> Patient Journey Timeline</h3>
+                </div>
+                <div id="patient-timeline-container" style="padding: 24px;">
+                    <!-- Timeline will be rendered here -->
+                </div>
+            </div>
+
+            <!-- Patient Summary Card -->
+            <div class="patient-summary-card">
+                <!-- Header Section -->
+                <div class="summary-header">
+                    <div class="patient-basic-info">
+                        <div class="patient-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="patient-details">
+                            <h2>Rajesh Kumar</h2>
+                            <div class="patient-meta">
+                                <span class="patient-id-badge">ACMS-2025-001</span>
+                                <span class="patient-age">Age: 45 years</span>
+                                <span class="patient-phone"><i class="fas fa-phone"></i> +91 98765 43210</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="visit-badge">
+                        <i class="fas fa-calendar-check"></i>
+                        <span>2nd Visit</span>
+                    </div>
+                </div>
+
+                <!-- Main Content Grid -->
+                <div class="summary-content">
+                    <!-- Left Column -->
+                    <div class="summary-column">
+                        <!-- Initial Complaint -->
+                        <div class="summary-block">
+                            <div class="block-header">
+                                <i class="fas fa-exclamation-circle"></i>
+                                <h3>Initial Complaint</h3>
+                            </div>
+                            <div class="block-content">
+                                <p class="complaint-text">Fever & Body Pain</p>
+                                <p class="complaint-details">Patient presented with high-grade fever (102°F) and generalized body pain for the past 3 days. Associated with chills and fatigue.</p>
+                            </div>
+                        </div>
+
+                        <!-- Final Diagnosis -->
+                        <div class="summary-block">
+                            <div class="block-header">
+                                <i class="fas fa-diagnoses"></i>
+                                <h3>Final Diagnosis</h3>
+                            </div>
+                            <div class="block-content">
+                                <div class="diagnosis-item primary">
+                                    <span class="diagnosis-label">Primary:</span>
+                                    <span class="diagnosis-value">Viral Fever with Myalgia</span>
+                                </div>
+                                <div class="diagnosis-item secondary">
+                                    <span class="diagnosis-label">Secondary:</span>
+                                    <span class="diagnosis-value">Mild Dehydration</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Clinical Notes -->
+                        <div class="summary-block">
+                            <div class="block-header">
+                                <i class="fas fa-sticky-note"></i>
+                                <h3>Clinical Notes</h3>
+                            </div>
+                            <div class="block-content">
+                                <p>Patient appears well-oriented. Vital signs stable. No signs of respiratory distress. Abdomen soft, non-tender. Advised rest and adequate hydration.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="summary-column">
+                        <!-- Test Results Status -->
+                        <div class="summary-block test-results-block">
+                            <div class="block-header">
+                                <i class="fas fa-vial"></i>
+                                <h3>Test Results</h3>
+                            </div>
+                            <div class="block-content">
+                                <div class="test-status pending">
+                                    <div class="test-status-header">
+                                        <i class="fas fa-clock"></i>
+                                        <span class="status-text">Pending</span>
+                                    </div>
+                                    <div class="test-list">
+                                        <div class="test-item">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>CBC - Completed</span>
+                                        </div>
+                                        <div class="test-item">
+                                            <i class="fas fa-clock"></i>
+                                            <span>Blood Sugar (Fasting) - Pending</span>
+                                        </div>
+                                        <div class="test-item">
+                                            <i class="fas fa-clock"></i>
+                                            <span>X-Ray Chest - Pending</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="test-status ready" style="display: none;">
+                                    <div class="test-status-header">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span class="status-text">All Results Ready</span>
+                                    </div>
+                                    <div class="test-results-view">
+                                        <button class="btn btn-secondary btn-small">
+                                            <i class="fas fa-eye"></i> View Results
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Prescribed Medications -->
+                        <div class="summary-block">
+                            <div class="block-header">
+                                <i class="fas fa-pills"></i>
+                                <h3>Prescribed Medications</h3>
+                            </div>
+                            <div class="block-content">
+                                <div class="medication-list">
+                                    <div class="med-item-summary">
+                                        <strong>Paracetamol</strong>
+                                        <span>500mg - Twice daily after meals</span>
+                                    </div>
+                                    <div class="med-item-summary">
+                                        <strong>Ibuprofen</strong>
+                                        <span>400mg - Once daily</span>
+                                    </div>
+                                    <div class="med-item-summary">
+                                        <strong>Multivitamin</strong>
+                                        <span>1 tablet - Once daily</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Treatment Plan Status -->
+                        <div class="summary-block">
+                            <div class="block-header">
+                                <i class="fas fa-clipboard-list"></i>
+                                <h3>Treatment Plan</h3>
+                            </div>
+                            <div class="block-content">
+                                <div class="plan-status">
+                                    <span class="status-badge pending">Awaiting Review</span>
+                                    <p class="plan-note">Treatment plan created during 1st visit. Ready for finalization after test results review.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Section -->
+                <div class="summary-actions">
+                    <button class="btn btn-secondary" onclick="window.location.href='consultation.html'">
+                        <i class="fas fa-edit"></i> Edit Consultation
+                    </button>
+                    <button class="btn btn-secondary" onclick="window.print()">
+                        <i class="fas fa-print"></i> Print Summary
+                    </button>
+                    <button class="btn btn-primary btn-large" id="finalize-treatment-plan">
+                        <i class="fas fa-check-circle"></i>
+                        Finalize Treatment Plan
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/api-client.js"></script>
+    <script src="scripts/database.js"></script>
+    <script src="scripts/auth.js"></script>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/patient-timeline.js"></script>
+    <script src="scripts/patient-summary.js"></script>
+</body>
+</html>
+
