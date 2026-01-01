@@ -18,15 +18,6 @@ I transform complex data into actionable insights and build intelligent solution
 
 ---
 
-## 📊 GitHub Stats
-
-<div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=akpradhn&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=akpradhn&layout=compact&theme=radical&hide_border=true" alt="Top Languages" />
-</div>
-
----
-
 ## 🔥 Featured Projects
 
 - **[DrifterTrails](https://github.com/akpradhn/drifterTrails)** - Modern affiliate product management system with intelligent Amazon product extraction
@@ -58,5 +49,3 @@ I transform complex data into actionable insights and build intelligent solution
 
 - [How to deploy a stable Shiny App with minimal effort ?](https://medium.com/@akpradhn/how-to-deploy-a-shiny-app-at-zero-cost-94e8897df34d)
 
-
-# arogyaCMS
